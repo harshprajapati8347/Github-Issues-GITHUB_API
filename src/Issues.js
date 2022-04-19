@@ -17,7 +17,7 @@ function App() {
 
   async function fetchIssues() {
     const response = await fetch(
-      `https://api.github.com/repos/PHP-FFMpeg/PHP-FFMpeg/issues`
+      `https://api.github.com/repos/PHP-FFMpeg/PHP-FFMpeg/issues?per_page=1000&state=${filter}`
     );
     return await response.json();
   }
@@ -29,7 +29,7 @@ function App() {
 
   async function fetchIssuesOpen() {
     const response = await fetch(
-      `https://api.github.com/search/issues?q=repo:PHP-FFMpeg/PHP-FFMpeg+type:issue`
+      `https://api.github.com/search/issues?q=repo:PHP-FFMpeg/PHP-FFMpeg+type:issue+state:open&per_page=1`
     );
     return await response.json();
   }
