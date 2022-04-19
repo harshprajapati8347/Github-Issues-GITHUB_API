@@ -10,6 +10,7 @@
 
 # 4. `npm start`
 
+- toggle between open & close issues by Clicking the circled open GREEN & close RED icons. 
 - You can select an issue to read description. 
 
 LIVE APP: https://edvolve.netlify.app/
